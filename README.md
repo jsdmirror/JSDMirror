@@ -1,5 +1,32 @@
-由于SB的GitHub屏蔽中国大陆用户，
-中国大陆用户建议访问: https://cnb.cool/jsdmirror/jsdmirror
+# 平台支持 CNB 加速支持说明
+
+## 官方源
+
+[https://cnb.cool/cnb/feedback/-/git/raw/main/.cnb.yml](https://cnb.cool/cnb/feedback/-/git/raw/main/.cnb.yml)
+
+## 兼容 CNB 官方加速方法路径
+
+[https://cdn.jsdmirror.com/cnb/cnb/feedback/-/git/raw/main/.cnb.yml](https://cdn.jsdmirror.com/cnb/cnb/feedback/-/git/raw/main/.cnb.yml)
+
+## 推荐加速方法
+
+  * [https://cdn.jsdmirror.com/cnb/cnb/feedback@main/.cnb.yml](https://cdn.jsdmirror.com/cnb/cnb/feedback@main/.cnb.yml)
+  * [https://cdn.jsdmirror.cn/cnb/cnb/feedback@main/.cnb.yml](https://cdn.jsdmirror.cn/cnb/cnb/feedback@main/.cnb.yml)
+
+## 路径说明
+
+  * **CNB仓库名称** ：cnb/feedback。
+  * **我们的路径** ：[https://cdn.jsdmirror.com/cnb/cnb/feedback](https://cdn.jsdmirror.com/cnb/cnb/feedback)。其中，第一个 cnb 是加速项目，类似于[https://cdn.jsdmirror.com/gh/github/feedback](https://cdn.jsdmirror.com/gh/github/feedback) 。
+
+**当目录是 assets/more-info.png、版本为 main 时，拼接方式如下** ：
+
+  * **组织+仓库@版本 + 路径拼接** ：[https://cdn.jsdmirror.com/cnb/cnb/feedback@main/assets/more-info.png](https://cdn.jsdmirror.com/cnb/cnb/feedback@main/assets/more-info.png)
+  * **组织 +仓库  +/git/raw/ + 版本 + 文件路径拼接** ：[https://cdn.jsdmirror.com/cnb/cnb/feedback/-/git/raw/main/assets/more-info.png](https://cdn.jsdmirror.com/cnb/cnb/feedback/-/git/raw/main/assets/more-info.png)
+
+## 效果展示
+
+[https://cdn.jsdmirror.cn/cnb/cnb/feedback@main/assets/more-info.png](https://cdn.jsdmirror.cn/cnb/cnb/feedback@main/assets/more-info.png)
+
 ## 概述
 JSDMirror，作为一个基于 jsDelivr CDN 服务的国内镜像站点，始终致力于为前端开发者打造一个快速、稳定的资源访问环境。随着前端技术的迅速演进，JavaScript 库、框架及工具等资源的使用愈发普遍，但国外源服务器的访问常受网络延迟与地理位置限制，影响效率。JSDMirror 通过在中国大陆部署高效优化线路节点保证回源和CDN回源的可用性，在使用境内CDN，有效克服了这一难题，极大地加速了国内开发者获取这些关键资源的速度。
 
@@ -15,7 +42,6 @@ JSDMirror，作为一个基于 jsDelivr CDN 服务的国内镜像站点，始终
 对于需要通过 CDN 引入的 JavaScript 库或 CSS 框架，开发者只需将 jsDelivr 提供的 CDN 链接中的 cdn.jsdelivr.net 替换为 cdn.jsdmirror.com 或其他 JSDMirror 提供的域名即可。例如：
 
 原始 jsDelivr CDN 链接：
-
 
 ```<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>```
 
@@ -61,7 +87,7 @@ JSDMirror，作为一个基于 jsDelivr CDN 服务的国内镜像站点，始终
 浏览器如何处理 SRI
 浏览器根据以下步骤处理 SRI：
 
-当浏览器在 <script> 或者 <link> 标签中遇到 integrity 属性之后，会在执行脚本或者应用样式表之前对比所加载文件的哈希值和期望的哈希值。 对于从其他来源提供的资源的子资源完整性验证，浏览器还使用跨源资源共享（CORS）检查资源，以确保提供资源的来源允许它与请求来源共享。
+当浏览器在 `<script>` 或者 `<link>` 标签中遇到 integrity 属性之后，会在执行脚本或者应用样式表之前对比所加载文件的哈希值和期望的哈希值。 对于从其他来源提供的资源的子资源完整性验证，浏览器还使用跨源资源共享（CORS）检查资源，以确保提供资源的来源允许它与请求来源共享。
 如果脚本或样式表不符合其相关的 integrity 值，浏览器必须拒绝执行该脚本或拒绝应用该样式表，并且必须返回一个网络错误，表明该脚本或样式表的获取失败。
 
 ## SRI 如何工作
@@ -69,7 +95,7 @@ JSDMirror，作为一个基于 jsDelivr CDN 服务的国内镜像站点，始终
 
 子资源完整性使你能够减轻这种攻击的一些风险，确保你的网络应用程序或网络文档（从 CDN 或任何地方）获取的文件在交付时没有被第三方注入任何额外的内容，也没有对这些文件进行任何其他形式的修改。
 SRI 如何使用
-使用子资源完整性功能的方法是，在任何 <script> 或 <link> 元素的 integrity 属性值中，指定你要告诉浏览器所获取的资源（或文件）的 base64 编码的加密哈希值。
+使用子资源完整性功能的方法是，在任何 `<script>` 或 `<link>` 元素的 integrity 属性值中，指定你要告诉浏览器所获取的资源（或文件）的 base64 编码的加密哈希值。
 
 integrity 值至少由一个字符串开始，每个字符串包括一个前缀，表示一个特定的哈希算法（目前允许的前缀是 sha256、sha384 和 sha512），后面是一个短横线（-），最后是实际的 base64 编码的哈希。
 
@@ -131,7 +157,7 @@ pause
 ## 浏览器如何处理 SRI
 浏览器根据以下步骤处理 SRI：
 
-当浏览器在 <script> 或者 <link> 标签中遇到 integrity 属性之后，会在执行脚本或者应用样式表之前对比所加载文件的哈希值和期望的哈希值。 对于从其他来源提供的资源的子资源完整性验证，浏览器还使用跨源资源共享（CORS）检查资源，以确保提供资源的来源允许它与请求来源共享。
+当浏览器在 `<script>` 或者 `<link>` 标签中遇到 integrity 属性之后，会在执行脚本或者应用样式表之前对比所加载文件的哈希值和期望的哈希值。 对于从其他来源提供的资源的子资源完整性验证，浏览器还使用跨源资源共享（CORS）检查资源，以确保提供资源的来源允许它与请求来源共享。
 如果脚本或样式表不符合其相关的 integrity 值，浏览器必须拒绝执行该脚本或拒绝应用该样式表，并且必须返回一个网络错误，表明该脚本或样式表的获取失败。
 
 ## SRI支持的浏览器
@@ -283,8 +309,7 @@ PS:正常使用肯定是没问题，上述规定是主要打击利用镜像站�
 
 下面说一下常见的jsdelivr第三方站点 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>名字</td><td>网站</td><td>CDN</td><td>加速区域</td><td>IPV6</td></tr><tr><td>Jsdmirror</td><td><a href="https://jsd.cdn.zzko.cn/">https://jsd.cdn.zzko.cn/</a></td><td>白山云 </td><td>中国大陆</td><td>不支持</td></tr><tr><td>荣6的jsDelivr</td><td><a href="https://jsd.nmmsl.top">https://jsd.nmmsl.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>渺软的jsDelivr</td><td><a href="https://jsd.onmicrosoft.cn/">https://jsd.onmicrosoft.cn/</a></td><td>没看出来</td><td>中国大陆</td><td>不支持</td></tr><tr><td>一府 CDN</td><td><a href="https://jsd.duolaa.top">https://jsd.duolaa.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>web缓存网</td><td><a href="https://www.webcache.cn/">https://www.webcache.cn/</a></td><td>七牛cdn</td><td>全球</td><td>不支持大陆</td></tr><tr><td>哔哩CDN</td><td><a href="https://cdn.bili33.top">https://cdn.bili33.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>Jsdmirror</td><td><a href="https://cdn.jsdmirror.cn/">https://cdn.jsdmirror.cn/</a></td><td>白山云</td><td>全球</td><td>支持</td></tr><tr><td>Jsdelivr CDN Mirror<br>@DeepSea</td><td><a href="https://jsdelivr.qaq.qa">https://jsdelivr.qaq.qa</a></td><td>香港阿里云<br>美国洛杉矶</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>Jsdelivr CDN Mirror<br>@DeepSea</td><td><a href="https://jsdelivr.aby.pub">https://jsdelivr.aby.pub</a></td><td>香港阿里云<br>美国洛杉矶</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>topthink</td><td><a href="https://jsdelivr.topthink.com">https://jsdelivr.topthink.com</a></td><td>阿里云</td><td>全球</td><td>支持</td></tr><tr><td>Yize的公益jsDelivr<br>镜像站</td><td><a href="https://cdn.vxo.im">https://cdn.vxo.im</a></td><td>CNMCDN</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>Jsdmirror</td><td><a href="https://cdn.jsdmirror.com/">https://cdn.jsdmirror.com/</a></td><td>泽瑶CDN</td><td>全球</td><td>支持</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>名字</td><td>网站</td><td>CDN</td><td>加速区域</td><td>IPV6</td></tr><tr><td>Jsdmirror</td><td><a href="https://jsd.cdn.zzko.cn/">https://jsd.cdn.zzko.cn/</a></td><td>-</td><td>中国香港</td><td>不支持</td></tr><tr><td>荣6的jsDelivr</td><td><a href="https://jsd.nmmsl.top">https://jsd.nmmsl.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>渺软的jsDelivr</td><td><a href="https://jsd.onmicrosoft.cn/">https://jsd.onmicrosoft.cn/</a></td><td>没看出来</td><td>中国大陆</td><td>不支持</td></tr><tr><td>一府 CDN</td><td><a href="https://jsd.duolaa.top">https://jsd.duolaa.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>web缓存网</td><td><a href="https://www.webcache.cn/">https://www.webcache.cn/</a></td><td>七牛cdn</td><td>全球</td><td>不支持大陆</td></tr><tr><td>哔哩CDN</td><td><a href="https://cdn.bili33.top">https://cdn.bili33.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>Jsdmirror</td><td><a href="https://cdn.jsdmirror.cn/">https://cdn.jsdmirror.cn/</a></td><td>白山云</td><td>全球</td><td>支持</td></tr><tr><td>Jsdelivr CDN Mirror<br>@DeepSea</td><td><a href="https://jsdelivr.qaq.qa">https://jsdelivr.qaq.qa</a></td><td>香港阿里云<br>美国洛杉矶</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>Jsdelivr CDN Mirror<br>@DeepSea</td><td><a href="https://jsdelivr.aby.pub">https://jsdelivr.aby.pub</a></td><td>香港阿里云<br>美国洛杉矶</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>topthink</td><td><a href="https://jsdelivr.topthink.com">https://jsdelivr.topthink.com</a></td><td>阿里云</td><td>全球</td><td>支持</td></tr><tr><td>Yize的公益jsDelivr<br>镜像站</td><td><a href="https://cdn.vxo.im">https://cdn.vxo.im</a></td><td>CNMCDN</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>Jsdmirror</td><td><a href="https://cdn.jsdmirror.com/">https://cdn.jsdmirror.com/</a></td><td>泽瑶CDN</td><td>全球</td><td>支持</td></tr></tbody></table></figure>
 
 
 
-本页面由文心一言大模型编写
