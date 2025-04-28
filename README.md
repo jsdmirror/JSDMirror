@@ -1,4 +1,4 @@
-# 平台支持 CNB 加速支持说明
+# 平台支持 CNB、cdnjs 加速支持说明
 
 ## 官方源
 
@@ -26,6 +26,10 @@
 ## 效果展示
 
 [https://cdn.jsdmirror.cn/cnb/cnb/feedback@main/assets/more-info.png](https://cdn.jsdmirror.cn/cnb/cnb/feedback@main/assets/more-info.png)
+
+
+## CDNJS 路径不变 
+
 
 ## 概述
 JSDMirror，作为一个基于 jsDelivr CDN 服务的国内镜像站点，始终致力于为前端开发者打造一个快速、稳定的资源访问环境。随着前端技术的迅速演进，JavaScript 库、框架及工具等资源的使用愈发普遍，但国外源服务器的访问常受网络延迟与地理位置限制，影响效率。JSDMirror 通过在中国大陆部署高效优化线路节点保证回源和CDN回源的可用性，在使用境内CDN，有效克服了这一难题，极大地加速了国内开发者获取这些关键资源的速度。
