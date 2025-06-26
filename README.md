@@ -1,3 +1,9 @@
+
+# 特别感谢
+<img src="https://www.jsdmirror.com/static/img/serve/EdgeOne.png" alt="Edgeone" style="width:300px;height: 50px;">
+本项目的 CDN 加速和安全保护由腾讯 EdgeOne 赞助。
+
+
 # 平台支持 CNB、cdnjs 加速支持说明
 
 ## 官方源
@@ -315,5 +321,3 @@ PS:正常使用肯定是没问题，上述规定是主要打击利用镜像站�
 <figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td>名字</td><td>网站</td><td>CDN</td><td>加速区域</td><td>IPV6</td></tr><tr><td>Jsdmirror</td><td><a href="https://jsd.cdn.zzko.cn/">https://jsd.cdn.zzko.cn/</a></td><td>-</td><td>中国香港</td><td>不支持</td></tr><tr><td>荣6的jsDelivr</td><td><a href="https://jsd.nmmsl.top">https://jsd.nmmsl.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>渺软的jsDelivr</td><td><a href="https://jsd.onmicrosoft.cn/">https://jsd.onmicrosoft.cn/</a></td><td>没看出来</td><td>中国大陆</td><td>不支持</td></tr><tr><td>一府 CDN</td><td><a href="https://jsd.duolaa.top">https://jsd.duolaa.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>web缓存网</td><td><a href="https://www.webcache.cn/">https://www.webcache.cn/</a></td><td>七牛cdn</td><td>全球</td><td>不支持大陆</td></tr><tr><td>哔哩CDN</td><td><a href="https://cdn.bili33.top">https://cdn.bili33.top</a></td><td>Vercel</td><td>Anycast<br>非中国大陆</td><td>不支持</td></tr><tr><td>Jsdmirror</td><td><a href="https://cdn.jsdmirror.cn/">https://cdn.jsdmirror.cn/</a></td><td>白山云</td><td>全球</td><td>支持</td></tr><tr><td>Jsdelivr CDN Mirror<br>@DeepSea</td><td><a href="https://jsdelivr.qaq.qa">https://jsdelivr.qaq.qa</a></td><td>香港阿里云<br>美国洛杉矶</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>Jsdelivr CDN Mirror<br>@DeepSea</td><td><a href="https://jsdelivr.aby.pub">https://jsdelivr.aby.pub</a></td><td>香港阿里云<br>美国洛杉矶</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>topthink</td><td><a href="https://jsdelivr.topthink.com">https://jsdelivr.topthink.com</a></td><td>阿里云</td><td>全球</td><td>支持</td></tr><tr><td>Yize的公益jsDelivr<br>镜像站</td><td><a href="https://cdn.vxo.im">https://cdn.vxo.im</a></td><td>CNMCDN</td><td>非中国大陆</td><td>不支持大陆</td></tr><tr><td>Jsdmirror</td><td><a href="https://cdn.jsdmirror.com/">https://cdn.jsdmirror.com/</a></td><td>泽瑶CDN</td><td>全球</td><td>支持</td></tr></tbody></table></figure>
 
 
-<img src="https://www.jsdmirror.com/static/img/serve/EdgeOne.png" alt="Edgeone" style="width:250px;height: 50px;">
-本项目的 CDN 加速和安全保护由腾讯 EdgeOne 赞助。
