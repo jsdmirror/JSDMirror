@@ -327,8 +327,6 @@ PS:正常使用肯定是没问题，上述规定是主要打击利用镜像站�
 
 > 感兴趣的想体验同款服务？点击下方链接即可免费领取，无需付费，即开即用！
 
-[![亚洲最佳 CDN、边缘与安全解决方案 - Tencent EdgeOne](https://edgeone.ai)
-
 
 <a href="https://edgeone.ai">
 亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne</a>
