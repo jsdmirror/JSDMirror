@@ -319,11 +319,18 @@ PS:正常使用肯定是没问题，上述规定是主要打击利用镜像站�
 
 由于免费cdn现在比较多，建议使用免费cdn自行代理jsdelivr。.对于自己来说属于可控
 在这里也非常感谢腾讯云eo的赞助
+本项目现已由 **Tencent EdgeOne** 提供长期、免费的 **CDN 加速与安全防护**  
+套餐特点：  
+- 不限流量、不限请求数  
+- 中国大陆节点全覆盖  
+- **无任何超额费用**  
 
-"本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助：EdgeOne 提供长期有效的免费套餐，包含不限量的流量和请求，覆盖中国大陆节点，且无任何超额收费，感兴趣的朋友可以点击下面的链接领取"
+> 感兴趣的想体验同款服务？点击下方链接即可免费领取，无需付费，即开即用！
+
+[![亚洲最佳 CDN、边缘与安全解决方案 - Tencent EdgeOne](https://edgeone.ai)
+
 
 <a href="https://edgeone.ai">
 亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne</a>
 
-<img src="https://www.jsdmirror.com/static/img/serve/EdgeOne.png" alt="Edgeone" style="width:300px;height: 50px;">
-本项目的 CDN 加速和安全保护由腾讯 EdgeOne 赞助。
+<img src="https://www.jsdmirror.com/static/img/serve/EdgeOne.png" alt="Edgeone" style="width:300px;height: 50px;">
